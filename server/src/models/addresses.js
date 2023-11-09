@@ -26,6 +26,4 @@ const Addresses = ( sequelize ) => {
     })
 }
 
-module.exports = {
-    Addresses
-}
+module.exports = Addresses

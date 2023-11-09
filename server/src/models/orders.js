@@ -21,6 +21,4 @@ const Orders = ( sequelize ) => {
     })
 }
 
-module.exports = {
-    Orders
-}
+module.exports = Orders

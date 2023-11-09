@@ -31,6 +31,4 @@ const Users = (sequelize) => {
     })
 }
 
-module.exports = {
-    Users
-}
+module.exports = Users

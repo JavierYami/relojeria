@@ -18,6 +18,4 @@ const ProductImages = ( sequelize ) => {
     })
 }
 
-module.exports = {
-    ProductImages
-}
+module.exports = ProductImages

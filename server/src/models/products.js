@@ -15,6 +15,10 @@ const Products = ( sequelize ) => {
             type: DataTypes.INTEGER,
             allowNull:false
         },
+        stock: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
         active: {
             type: DataTypes.BOOLEAN,
             defaultValue: true
@@ -22,6 +26,4 @@ const Products = ( sequelize ) => {
     })
 }
 
-module.exports = {
-    Products
-}
+module.exports = Products
