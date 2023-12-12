@@ -36,5 +36,6 @@ Addresses.hasMany(Orders);
 Orders.belongsTo(Users);
 
 module.exports = { 
-    sequelize
+    sequelize,
+    Users
 }

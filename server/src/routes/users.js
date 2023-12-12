@@ -1,13 +1,24 @@
 const {Router} = require('express');
+const {createUser} = require('../controllers/users');
 
 const usersRouter = Router();
 
-usersRouter.post('/', (req, res) => {
+usersRouter.post('/', async (req, res) => {
     try {
-        res.send('NIY: Esta ruta postea un user')
+        const {firstName, lastName, email, password} = req.body;
+        const user = await createUser(firstName, lastName, email, password);
+        res.status(201).send(user);
     } catch (error) {
-        res.send('NIY: Mensaje de error')
+        res.status(400).send(error.message);
     }
 });
+
+usersRouter.post('/login', async (req, res) => {
+    try {
+        
+    } catch (error) {
+        
+    }
+})
 
 module.exports = {usersRouter};
