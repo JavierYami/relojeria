@@ -18,7 +18,8 @@ export default {
       'rust-900': '#712f1d',
       'rust-950': '#3d150d'
     },
-    extend: {},
+    extend: {
+    },
   },
   plugins: [],
 }

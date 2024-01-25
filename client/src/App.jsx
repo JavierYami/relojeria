@@ -3,7 +3,7 @@ import Login from "./views/Login";
 function App () {
 
     return (
-        <div class="bg-rust-500">
+        <div>
             <Login></Login>
         </div>
     )
