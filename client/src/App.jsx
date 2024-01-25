@@ -1,10 +1,10 @@
+import Login from "./views/Login";
+
 function App () {
 
     return (
-        <div>
-            <h1 className="text-3xl font-bold underline">
-            Hello world!
-            </h1>
+        <div class="bg-rust-500">
+            <Login></Login>
         </div>
     )
 
