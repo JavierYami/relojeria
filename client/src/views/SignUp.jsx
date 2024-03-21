@@ -45,7 +45,7 @@ const SignUp = () => {
             }}
           >
             <Form>
-              <Input
+              <MyTextInput
                 label="First Name"
                 name="firstName"
                 type="text"
