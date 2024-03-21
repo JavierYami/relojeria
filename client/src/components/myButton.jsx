@@ -3,7 +3,7 @@ const MyButton  = ({text, type}) => {
 
     return (
         <>
-            <button className="bg-rust-50 rounded px-2 w- py-1" type={type}>{text}</button>
+            <button className="bg-rust-300 text-rust-50 rounded ease-in-out px-2 py-1 hover:bg-rust-500" type={type}>{text}</button>
         </>
     )
 }
