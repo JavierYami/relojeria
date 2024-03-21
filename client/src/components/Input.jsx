@@ -1,11 +1,16 @@
-const Input = ({text}) => {
+import { useField } from "formik";
 
+const MyTextInput = ({ label, ...props }) => {
+    const [field, meta] = useField(props);
     return (
-            <input className= "w-full rounded shadow h-12 p-2 border-0 outline-0 transition-all ease-in duration-500" 
-            placeholder={text}/>
-    )
+      <>
+        <label htmlFor={props.id || props.name}>{label}</label>
+        <input className="text-input" {...field} {...props} />
+        {meta.touched && meta.error ? (
+          <div className="error">{meta.error}</div>
+        ) : null}
+      </>
+    );
+  };
 
-}
-
-export default Input;
-
+  export default MyTextInput;

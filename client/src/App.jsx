@@ -1,10 +1,10 @@
-import Login from "./views/Login";
+import SignUp from "./views/SignUp";
 
 function App () {
 
     return (
         <div>
-            <Login></Login>
+            <SignUp></SignUp>
         </div>
     )
 
