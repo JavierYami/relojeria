@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Formik, Form, useField, useFormikContext } from "formik";
 import * as Yup from "yup";
-import Input from "../components/Input";
+import MyTextInput from "../components/myTextInput";
 import MyCheckbox from "../components/myCheckBox";
 import MySelect from "../components/mySelect";
 import MyButton from "../components/myButton";
@@ -51,13 +51,13 @@ const SignUp = () => {
                 type="text"
                 placeholder="Jane"
               />
-              <Input
+              <MyTextInput
                 label="Last Name"
                 name="lastName"
                 type="text"
                 placeholder="Doe"
               />
-              <Input
+              <MyTextInput
                 label="Email Address"
                 name="email"
                 type="email"
