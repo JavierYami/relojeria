@@ -9,7 +9,7 @@ const SignUp = () => {
 
     return (
         <div className="w-2/6 flex flex-col justify-center items-center bg-white shadow p-5 py-14 text-gray-950 rounded">
-          <h1 className="font-display font-extrabold text-2xl mb-5">Registrate</h1>
+          <h1 className="font-display font-extrabold text-2xl mb-5">Regístrate</h1>
           <Formik
             initialValues={{
               firstName: "",
@@ -21,22 +21,13 @@ const SignUp = () => {
             validationSchema={Yup.object({
               firstName: Yup.string()
                 .max(15, "Must be 15 characters or less")
-                .required("Required"),
+                .required("Requerido"),
               lastName: Yup.string()
                 .max(20, "Must be 20 characters or less")
-                .required("Required"),
+                .required("Requerido"),
               email: Yup.string()
-                .email("Invalid email addresss`")
-                .required("Required"),
-              acceptedTerms: Yup.boolean()
-                .required("Required")
-                .oneOf([true], "You must accept the terms and conditions."),
-              jobType: Yup.string()
-                .oneOf(
-                  ["designer", "development", "product", "other"],
-                  "Invalid Job Type"
-                )
-                .required("Required")
+                .email("Correo inválido")
+                .required("Requerido")
             })}
             onSubmit={async (values, { setSubmitting }) => {
               await new Promise(r => setTimeout(r, 500));
@@ -64,7 +55,7 @@ const SignUp = () => {
               />
               <MyButton
               type="submit"
-              text="Crear"
+              text="CREAR"
               />
             </Form>
           </Formik>
