@@ -8,8 +8,8 @@ import MyButton from "../components/myButton";
 const SignUp = () => {
 
     return (
-        <div className="w-2/6 flex flex-col justify-center items-center gap-3 bg-gray-100">
-          <h1>Registrate</h1>
+        <div className="w-2/6 flex flex-col justify-center items-center bg-white shadow p-5 py-14 text-gray-950 rounded">
+          <h1 className="font-display font-extrabold text-2xl mb-5">Registrate</h1>
           <Formik
             initialValues={{
               firstName: "",
@@ -43,22 +43,28 @@ const SignUp = () => {
               setSubmitting(false);
             }}
           >
-            <Form>
+            <Form className="flex flex-col w-full gap-5 justify-center">
               <MyTextInput
                 label="Nombre"
                 name="firstName"
                 type="text"
-                placeholder="Jane"
+                placeholder=""
               />
               <MyTextInput
                 label="Apellido"
                 name="lastName"
                 type="text"
-                placeholder="Jane"
+                placeholder=""
+              />
+              <MyTextInput
+                label="Correo"
+                name="email"
+                type="email"
+                placeholder=""
               />
               <MyButton
               type="submit"
-              text="Enviar"
+              text="Crear"
               />
             </Form>
           </Formik>

@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
+    fontFamily:{
+      'display': ['Lora']
+    },
     colors: {
+      'white':'#FFFFFF',
       'gray': {
         '50': '#f7f7f7',
         '100': '#f0f0f0',
