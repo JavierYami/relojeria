@@ -8,7 +8,7 @@ import MyButton from "../components/myButton";
 const SignUp = () => {
 
     return (
-        <>
+        <div className="w-2/6 flex flex-col justify-center items-center gap-3 bg-gray-100">
           <h1>Registrate</h1>
           <Formik
             initialValues={{
@@ -45,40 +45,24 @@ const SignUp = () => {
           >
             <Form>
               <MyTextInput
-                label="First Name"
+                label="Nombre"
                 name="firstName"
                 type="text"
                 placeholder="Jane"
               />
               <MyTextInput
-                label="Last Name"
+                label="Apellido"
                 name="lastName"
                 type="text"
-                placeholder="Doe"
+                placeholder="Jane"
               />
-              <MyTextInput
-                label="Email Address"
-                name="email"
-                type="email"
-                placeholder="jane@formik.com"
-              />
-              <MySelect label="Job Type" name="jobType">
-                <option value="">Select a job type</option>
-                <option value="designer">Designer</option>
-                <option value="development">Developer</option>
-                <option value="product">Product Manager</option>
-                <option value="other">Other</option>
-              </MySelect>
-              <MyCheckbox name="acceptedTerms">
-                I accept the terms and conditions
-              </MyCheckbox>
               <MyButton
               type="submit"
               text="Enviar"
               />
             </Form>
           </Formik>
-        </>
+        </div>
       );
    
 }
