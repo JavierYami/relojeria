@@ -8,8 +8,8 @@ import MyButton from "../components/myButton";
 const SignUp = () => {
 
     return (
-        <div className="w-2/6 flex flex-col justify-center items-center bg-white shadow p-5 py-14 border border-gray-100 text-gray-950 rounded">
-          <h1 className="font-bold text-2xl mb-3">Regístrate</h1>
+        <div className="w-2/6 flex flex-col justify-center items-center bg-gray-50 p-5 py-14 border border-gray-100 text-gray-950 rounded">
+          <h1 className="text-2xl text-gray-950 mb-3">Regístrate</h1>
           <div className="border-t w-full mb-3"></div>
           <Formik
             initialValues={{

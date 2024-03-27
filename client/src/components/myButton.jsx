@@ -3,7 +3,7 @@ const MyButton  = ({text, type}) => {
 
     return (
         <>
-            <button className="px-2 py-1 w-full font-medium bg-brown-400 text-brown-950 hover:bg-brown-500 rounded-sm disabled:bg-brown-200 text-brown-100" type={type}>{text}</button>
+            <button className="px-2 py-1 w-full font-medium bg-danger-800 text-danger-50 hover:bg-danger-900 rounded-sm disabled:bg-gray-200" type={type}>{text}</button>
         </>
     )
 }
