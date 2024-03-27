@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     fontFamily:{
-      'sans':['Inter'],
+      'sans':['Sora'],
       'display': ['Lora']
     },
     colors: {
